@@ -1,7 +1,7 @@
 //OBJETO: RADIOLOGÍA
 let traumatologia = [
 
-    //ARRAY 1: pacientes radiología
+    //ARRAY 1: pacientes traumatología
 
     //objeto [0]
     {
