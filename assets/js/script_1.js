@@ -49,6 +49,24 @@ let radiologia = [
         
 ];
 
+
+
+/*********DESAFIO EVALUADO-EJERCICIO 2  */
+
+//metodo SHIFT = elimina el primer elemento del array
+radiologia.shift()
+console.log(radiologia)
+
+
+//metodo POP = elimina el ultimo elemento del array
+radiologia.pop()
+console.log(radiologia)
+
+/*********final del ejercicio -2 */
+
+
+
+
 // Recorre el arreglo 'radiologia' (atributo length=longitus)
 let tabla = '';
 for (let i = 0; i < radiologia.length; i++) {
