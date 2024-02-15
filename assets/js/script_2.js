@@ -1,11 +1,11 @@
-//OBJETO: RADIOLOGÍA
+//OBJETO: traumatologia
 let traumatologia = [
 
     //ARRAY 1: pacientes traumatología
 
     //objeto [0]
     {
-        hora: '8:00', 
+        hora: '08:00', 
         especialista: 'MARIA PAZ ALTUZARRA', 
         paciente: 'PAULA SANCHEZ', 
         rut: '15554774-5', 
@@ -66,6 +66,39 @@ let traumatologia = [
         prevision: 'ISAPRE'
     }
 ];
+
+
+/************DESAFÍO EVALUADO - PARTE 1 */
+
+let citasExtras = [
+    //objeto [7]
+    {hora: '09:00', especialista: 'RENÉ POBLETE', paciente: 'ANA GELLONA', rut: '13123329-7', prevision: 'ISAPRE'},
+    //objeto [8]
+    {hora: '09:30', especialista: 'MARIA SOLAR', paciente: 'RAMIRO ANDRADE', rut: '12221451-K', prevision: 'ISAPRE'},
+    //objeto [9]
+    {hora: '10:00', especialista: 'RAUL LOYOLA', paciente: 'CARMEN ISLA', rut: '10112348-3', prevision: 'FONASA'},
+    //objeto [10]
+    {hora: '10:30', especialista: 'ANTONIO LARENAS', paciente: 'PABLO LOAYZA', rut: '10112348-3', prevision: 'ISAPRE'},
+    //objeto [11]
+    {hora: '12:00', especialista: 'MATIAS ARAVENA', paciente: 'SUSANA POBLETE', rut: '14345656-6', prevision: 'ISAPRE'}
+];
+
+
+// metodo Concat para unir dos array
+traumatologia = traumatologia.concat(citasExtras);
+console.log(traumatologia);
+
+
+// metodo sort para ordenar por hora
+//función con (localeCompare) para determinar su orden
+let ordenCitas = traumatologia.sort((a,b) => {
+    //compara y devuelve el n° relativo
+    return a.hora.localeCompare(b.hora)
+})
+console.log(ordenCitas)
+
+
+/************FINAL DEL EJERCICIO 1 */
 
 
 // Recorre el arreglo 'traumatologia' (atributo length=longitus)
